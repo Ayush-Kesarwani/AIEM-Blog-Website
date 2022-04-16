@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
+
+:root {
+    --bg-size: 100% 100%;
+    --main-color: #fff;
+    --title: 'Josefin Sans', sans-serif;
+    --font-para: 'David Libre', serif;
+    --btn-color: #bbe1fa;
+    --btn-font-color: #000;
+    --btn-font: 1.5rem;
+    --eff: .3s all ease;
+}
+
+* {
+    font-family: var(--font-para);
+}
+
+html {
+    font-size: 62.5%;
+}
+.navbar
+{
+padding:1em 0 !important;
+}
+.navbar-toggler
+{
+border:none !important;
+outline:none !important;
+}
+.navbar-nav
+{
+padding-right: 70px!important;
+padding-left: 70px!important;
+}
+.nav-item
+{
+    
+    font-size: 20px;
+}
+.mob-logo
+{
+display: none;
+}
+.navbar
+{
+background-color: rgba(0,0,0,0);
+}
+.navbar-nav li a
+{
+   color:#500adb !important; 
+   font-weight: bold;
+}
+.navbar-modals
+{
+background:linear-gradient(rgb(240, 218, 218,0.3),transparent,rgb(240, 218, 218,0.3));
+}
+.navbar-modals i
+{
+font-size: 30px;
+margin-right: 5px;
+}
+
+p,
+label,
+input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+figure img,
+.fab {
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: hsl(84, 3%, 94%);
+}
+
+.main_header__div {
+    height: calc(100vh - 40vh);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0)), url('../images/6.webp');
+    background-size: var(--bg-size);
+}
+
+.main_heading {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color:#500adb;
+}
+
+.main_heading__para {
+    font-size: 2.2rem;
+}
+
+.main_heading__para span
+{
+    background-color: #500adb;
+    border-radius: 5px;
+}
+
+
+.main_header__div p {
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 0rem;
+}
+
+.main_header__div h2 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 2rem;
+    position: relative;
+    transition: var(--eff);
+}
+
+.main_header__div span {
+    font-family: var(--title);
+}
+
+.animateWord div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 8rem;
+    padding-top: 1rem;
+    margin-top: -1rem;
+}
+
+.animateWord div li {
+    font-weight: 700;
+    padding: 0 1rem;
+    height: 4.5rem;
+    margin-bottom: 4.5rem;
+    display: block;
+    font-family: var(--title);
+}
+
+.flip4 {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@-webkit-keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+
+    5% {
+        margin-top: -270px;
+    }
+
+    25% {
+        margin-top: -270px;
+    }
+
+    30% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    55% {
+        margin-top: -90px;
+    }
+
+    75% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+
+    5% {
+        margin-top: -270px;
+    }
+
+    25% {
+        margin-top: -270px;
+    }
+
+    30% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    55% {
+        margin-top: -90px;
+    }
+
+    75% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+
+}
+
+.main_header__div button {
+    color: var(--btn-font-color);
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: #500adb;
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border-radius: 5px;
+}
+
+.main_header__div button:hover,
+.left_div__views:hover,
+.left_div__reply:hover,
+figure img:hover,
+.subs_btn:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.8);
+}
+
+/************* left side of the blog style starts*/
+.blog_left__divh1 {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.blog_left__div .blog_title {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.blog_left__div p span {
+    /*color: #1b262c;*/
+    color: #500adb;
+}
+
+.left_div_btns {
+    margin-top: 3rem;
+    transition: var(--eff);
+}
+
+.blog_left__div .left_div__views {
+    color: white;
+    border-width: .2rem;
+    font-weight: bolder;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: #500adb;
+    border-color: var(--btn-color);
+    font-family: var(--title);
+}
+
+.blog_left__div .left_div__reply {
+    color: var(--btn-font-color);
+    border-width: .2rem;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+}
+
+
+/************************************ right side div ************************************/
+
+
+.right_div__title {
+    background: #d0cecf;
+    color: #000;
+}
+
+.right_div__title h2 {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+}
+
+
+.right_sub__div a
+{
+    padding-right: 4px;
+}
+.right_sub__div {
+    background: #fff;
+} 
+.right_sub__div a i
+{
+    color:#500adb;
+}
+.fab {
+    color: #000;
+}
+
+.fab:hover {
+    color: #d0cecf;
+    transform: rotate(360deg);
+}
+footer p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.modal-header h2,label
+{
+    color:#500adb;
+}
+.modal-body .text-area
+{
+    font-size: 15px;
+}
+.modal-body button
+{
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    border-color: #500adb;
+    color: #500adb;
+}
+.modal-body b, label, div h2
+{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.modal-body button:hover
+{
+    background-color: #500adb;
+}
+/*header responsive code*/
+@media(max-width:998px) {
+    html {
+        font-size: 60%;
+    }
+
+    .left_div__blog {
+        margin: 3rem 0;
+    }
+
+    p,
+    label,
+    input::placeholder {
+        font-size: 2.2rem;
+    }
+
+    :root {
+        --btn-font: 2rem;
+    }
+
+    .main_header__div h2 {
+        font-size: 5rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .left_div__blog {
+        margin: 3rem 0;
+    }
+
+}

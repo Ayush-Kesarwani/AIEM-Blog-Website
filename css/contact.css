@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
+
+:root {
+    --bg-size: 100% 100%;
+    --main-color: #fff;
+    --title: 'Josefin Sans', sans-serif;
+    --font-para: 'David Libre', serif;
+    --btn-color: #bbe1fa;
+    --btn-font-color: #000;
+    --btn-font: 1.5rem;
+    --eff: .3s all ease;
+}
+
+* {
+    font-family: var(--font-para);
+}
+
+html {
+    font-size: 62.5%;
+}
+.main_heading {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color:#500adb;
+}
+
+.main_heading__para {
+    font-size: 2.2rem;
+}
+
+.main_heading__para span
+{
+    background-color: #500adb;
+    border-radius: 5px;
+}
+
+
+.main_header__div p {
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 0rem;
+}
+
+.main_header__div h2 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 2rem;
+    position: relative;
+    transition: var(--eff);
+}
+
+.main_header__div span {
+    font-family: var(--title);
+}
+.navbar
+{
+padding:1em 0 !important;
+}
+.navbar-toggler
+{
+border:none !important;
+outline:none !important;
+}
+.navbar-nav
+{
+padding-right: 70px!important;
+padding-left: 70px!important;
+}
+.nav-item
+{
+    
+    font-size: 20px;
+}
+.mob-logo
+{
+display: none;
+}
+.navbar
+{
+background-color: rgba(0,0,0,0);
+}
+/*.nav-link
+{
+color:#500adb;
+}*/
+.navbar-nav li a
+{
+   color:#500adb !important; 
+   font-weight: bold;
+}
+
+p,
+label,
+input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+figure img,
+.fab {
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: hsl(84, 3%, 94%);
+}
+.contact-container{
+		height: 500px;
+}
+
+.contact
+{
+	background-color: #500adb;
+	/*background-color:rgb(60,56,56);*/
+	padding-left: 40px!important;
+	padding-top: 10px!important;
+}
+.icon
+{
+	font-size: 40px;
+	padding-right: 10px;
+}
+.fa
+{
+	padding-right:10px;
+	font-size: 40px;
+}
+.leftdiv
+{
+	padding-left: 35px!important;
+	padding-right: 35px!important;
+	padding-top: 10px!important;
+}
+::placeholder
+{
+	color: white !important;
+}
+.contact input
+{
+	width:100%;
+	border-radius: 20px;
+	padding-left: 15px;
+	outline: none;
+	border:1px solid white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 40px;
+	color: white;
+	background:transparent;
+	font-size: 15px;
+}
+.contact textarea
+{
+	width:100%;
+	border-radius: 20px;
+	padding-left: 15px;
+	padding-top: 10px;
+	color: white !important;
+	background:transparent;
+	outline: none;
+	border-color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 80px;
+	font-size: 15px;
+}
+.contact button
+{
+	font-weight: bolder;
+	font-size: 15px;
+	background: #fff;
+    color: #500adb;
+    border: black;
+    height:50px;  
+    width:150px;
+    border-radius: 20px;
+}
+@media(max-width: 600px)
+{
+	.contact-container
+	{
+		height: 830px;
+	}
+	.contact-container button
+	{
+		margin-bottom: 10px;
+	}
+}
+footer p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
